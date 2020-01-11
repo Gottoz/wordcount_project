@@ -1,0 +1,16 @@
+<h1>Count</h1>
+
+<h1>Words Count: {{ wordscount }}</h1>
+
+<h1>Your Text:</h1>
+{{ fulltext }}
+
+
+<h1>Words count:</h1>
+
+{%for key, value in worddictionary.items|dictsortreversed:1 %}
+
+{{ key }} - {{ value }}
+<br/>
+
+{% endfor %}
